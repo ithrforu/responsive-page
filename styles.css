@@ -79,7 +79,7 @@ main {
 	padding: 0.5em 1em;
 }
 
-@media screen and (min-width: 600px) { /* Ipad portrait mode */
+@media screen and (min-width: 768px) { /* Ipad portrait mode */
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -103,8 +103,10 @@ main {
 		grid-template-columns: repeat(auto-fill, minmax(220px,auto));
 		grid-gap: 15px;
 	}
+}
 
-		main {
+@media screen and (min-width: 1024px) { /* Ipad landscape mode or desktop */
+	main {
 		display: grid;
 		grid-template-columns: 3fr 1fr;
 		grid-gap: 15px;
@@ -113,8 +115,4 @@ main {
 	.sidebar {
 		margin-top: 1em;
 	}
-}
-
-@media screen and (min-width: 1024px) { /* Ipad landscape mode or desktop */
-
 }
